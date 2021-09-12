@@ -41,6 +41,12 @@ void setup() {
   Serial.println("Connecting to ");
   Serial.println(ssid);
 
+  IPAddress ip(192,168,1,103);
+  IPAddress dns(192, 168, 1, 1);
+  IPAddress gateway(192, 168, 1, 1);
+  IPAddress subnet(255, 255, 255, 0);
+  WiFi.config(ip, dns, gateway, subnet);
+  
   WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED) {

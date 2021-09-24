@@ -1,8 +1,10 @@
-#include <NTPClient_Generic.h>
+#include <DHT.h>
+#include <DHT_U.h>
+
+
 
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
-#include <DHT.h>
 //#include <NTPClient.h>
 #include <WiFiUdp.h>
 #include "IntDetails.h"
